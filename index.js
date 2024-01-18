@@ -36,7 +36,14 @@ window.onload = () => {
       { text: '' }
     ]
   
-    let posPrinterSetup = {};
+    let posPrinterSetup = {
+      "baudRate": 9600,
+      "options": {
+        "encoding": "utf8"
+      },
+      "port": "USB",
+      "stopBit": 1
+    };
     let electronPrinter = window.ElectronPrinter || window.ipcRenderer ? window.ipcRenderer.ElectronPrinter : null
     console.log(posPrinterInfo, posPrinterSetup,"posPrinterSetup");
     let url = `https://dereksamuel.github.io/print-testing-02/toprint.html`;
