@@ -39,7 +39,7 @@ window.onload = () => {
     let posPrinterSetup = {};
     let electronPrinter = window.ElectronPrinter || window.ipcRenderer ? window.ipcRenderer.ElectronPrinter : null
     console.log(posPrinterInfo, posPrinterSetup,"posPrinterSetup");
-    let url = `https://dereksamuel.github.io/print-testing/toprint.html`;
+    let url = `https://dereksamuel.github.io/print-testing-02/toprint.html`;
     console.log('To print', url);
   
     if (electronPrinter) {
